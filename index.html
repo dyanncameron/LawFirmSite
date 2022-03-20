@@ -11,6 +11,52 @@
 	<link href="style.css" rel="stylesheet">
 	<link href="css/carousel.css" rel="stylesheet">
 	<link href="css/contact.css" rel="stylesheet">
+
+	<style>
+		body, html {
+		  height: 100%;
+		  margin: 0;
+		  font-family: Arial, Helvetica, sans-serif;
+		}
+		
+		* {
+		  box-sizing: border-box;
+		}
+		
+		.bg-image {
+		  /* The image used */
+		  background-image: url("img/law.jpg");
+		  
+		  /* Add the blur effect */
+		  filter: blur(8px);
+		  -webkit-filter: blur(8px);
+		  
+		  /* Full height */
+		  height: 100%; 
+		  
+		  /* Center and scale the image nicely */
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		}
+		
+		/* Position text in the middle of the page/image */
+		.bg-text {
+		  background-color: rgb(0,0,0); /* Fallback color */
+		  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+		  color: white;
+		  font-weight: bold;
+		  border: 3px solid #f1f1f1;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  z-index: 2;
+		  width: 80%;
+		  padding: 20px;
+		  text-align: center;
+		}
+		</style>
 </head>
 <body>
 	<!--- Navigation and Logo-->
@@ -40,13 +86,14 @@
 		<div class="carousel-inner">
 			<div class="carousel-item active"><img src="img/law.jpg"></div>
 			<div class="carousel-item"><img src="img/law1.jpg"></div>
-			<!-- <div class="carousel-item"><img src="img/hammer.jpeg"></div> -->
-
-			
-		</div>
-
-		
+		</div>	
 	</div>
+
+	<div class="bg-text">
+		<h2>IF YOU NEED A LAW SERVICE WE GOT YOU</h2>
+		<h1 style="color: #d2ae6d; font-size:50px">We Care For You</h1>
+		<p>Our vission is to provide legal services that are timely, effective, efficient, and of high quality, to all client agencies.</p>
+	  </div>
 	<!--- End Image Slider -->
 
 	<!--- Complete Bootstrap Course -->
